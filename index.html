@@ -63,6 +63,12 @@
         </ol>
     </div>
 
+    <div id="app-8">
+        <p>{{ foo }}</p>
+        <!-- obj.foo는 더이상 변하지 않습니다! -->
+        <button v-on:click="foo = 'baz'">Change it</button>
+    </div>
+
     <script type="text/javascript" src="index.js"></script>
 </body>
 
