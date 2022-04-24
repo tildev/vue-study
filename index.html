@@ -45,17 +45,24 @@
         <input v-model="message">
     </div>
 
-    <div id = "b-app-7">
-    <ol>
-        <!-- todo-item 컴포넌트의 인스턴스 만들기 -->
-        <b-todo-item></b-todo-item>
-      </ol>
+    <div id="b-app-7">
+        <ol>
+            <!-- todo-item 컴포넌트의 인스턴스 만들기 -->
+            <b-todo-item></b-todo-item>
+        </ol>
     </div>
-    <div id = "b-app-7-d">
+    <div id="b-app-7-d">
         <ol>
             <li>할일 항목 하나입니다.</li>
         </ol>
     </div>
+
+    <div id="app-7">
+        <ol>
+            <todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+        </ol>
+    </div>
+
     <script type="text/javascript" src="index.js"></script>
 </body>
 
